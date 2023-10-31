@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=3d-float">
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script> 
+
+</head>
+
+<body>
+    <header id="body-header">
+        <nav>
+            <ul class="horizontal-list text-center nav-menu">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#about-section"> About </a></li>
+                <li><a href="#skill-section"> Skills </a></li>
+                <li><a href="#exp-section">Experience</a></li>
+                <li><a href="#achieve-section">Achievement</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="text-center" id="my-name-container">
+            <h1  id="my-name" class="first-letter">
+                Vaibhav
+            </h1>
+            <br>
+            <h1  id="my-name" class="first-letter">
+                Dhaulakhandi
+            </h1>
+            <div id="quote-1">
+                <h2><span>Expert<span> in anything was once a <span>beginner<span>...</h2>
+            </div>  
+        </div>  
+    </header>
+
+    <section id="about-section">
+        <img src="images/self.jpg">
+        <div>
+            <p>
+                Welcome to my portfolio, I am professional  <span class="text-highlight">DevOps Engineer</span> with more than 4 years of hands on experience in <span class="text-highlight">Docker, Kubernetes, Helm Charts</span> and multi cloud platforms such as <span class="text-highlight">Azure</span> and <span class="text-highlight">AWS</span>. As a DevOps Engineer my role is to introduced process, tools to balance needs throughout the software developments life cycle, from coding and deployment which brings and adds values to business and customer experience.
+            </p>
+        </div>
+    </section>
+    <section id="skill-section">
+        <div class="section-heading mb20px text-center">
+            <h1>
+                <span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                     SKILLS 
+                 </span>
+            </h1>
+        </div>
+        <div class="skills-display">
+
+            <div class="skill text-center mb50px">
+                <img src="images/docker_image.png" id="docker-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="nighty-percent mb-blue">
+                        <div class="skill-name">
+                            <span> DOCKER </span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="skill text-center mb50px">
+                <img src="images/K8s_image.png" id="k8s-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-teal">
+                        <div class="skill-name">
+                            <span> KUBERNETES </span>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="skill text-center  mb50px">
+                <img src="images/helm_image.png" id="helm-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="eighty-percent mb-dark-blue">
+                        <div class="skill-name">
+                            <span> HELM </span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="skill text-center  mb50px">
+                <img src="images/azure_image.png" id="azure-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="eighty-five-percent mb-blue">
+                        <div class="skill-name">
+                            <span> AZURE </span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="skill text-center  mb50px">
+                <img src="images/html_image.png" id="html-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="nighty-five-percent mb-orange">
+                        <div class="skill-name">
+                            <span> HTML </span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="skill text-center  mb50px">
+                <img src="images/css_image.png" id="css-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="eighty-five-percent mb-blue">
+                        <div class="skill-name">
+                            <span> CSS </span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="skill text-center  mb50px">
+                <img src="images/terraform_image.png" id="terraform-img" class="skill-image mb20px">        
+                <div class="skill-progress">
+                    <div class="sixty-percent mb-purple">
+                        <div class="skill-name">
+                            <span> TERRAFORM </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>   
+    </section>
+
+    <section id="exp-section">
+        <div class="section-heading mb75px text-center">
+            <h1>
+                <span>
+                    <i class="fas fa-briefcase"></i>
+                     EXPERIENCE
+                 </span>
+            </h1>
+        </div>
+
+        <div class="timeline mb75px">
+            <div class="timeline-box">
+                <div class="text-center">
+                    <h3 class="experience-designation  m0"> DevOps Platform Engineer </h3>
+                    <h4 class="experience-company-name"> Tata Consultancy Services </h4>
+                    <h5 class="experience-duration m0"> 09/2022 - PRESENT </h5>
+                </div>
+                <ul class="experience-description">
+                    <li>Implemented and upgraded CI/CD design and pipeline for deploying microservices in Kubernetes Cluster</li>
+                    <li>Worked on shell scripting and Dockerfile for deploying self-hosted agents in Cluster</li>
+                    <li>Built Terraform and ARM (Azure Resource manager) templates as IaC solution for deploying resources in Azure Cloud Platform.</li>
+                    <li>Used Helm charts for deploying resources in Kubernetes Cluster such as microservices and tools like Jenkins, nginx ingres controller </li>
+                    <li>Have implemented Strapiv4 solution, integerated it with PostgresDB and configured it to generate JSON API response as per the team requirements.</li>
+                    <li>Deployed ELK stack in Azure Kubernetes clusters using Helm Charts and later upgraded it to LTS version using ECK (Elastic Cloud on K8s) operators and CRDs</li>
+                </ul>    
+            </div>
+            <div class="timeline-box">
+                <div class="text-center">
+                    <h3 class="experience-designation  m0 m-blue"> DevOps Support Engineer </h3>
+                    <h4 class="experience-company-name"> Tata Consultancy Services </h4>
+                    <h5 class="experience-duration m0"> 07/2017 - 08/2022 </h5>
+                </div>
+                <ul class="experience-description">
+                    <li>Managed and worked on Jenkins pipeline used by SDET team for application functional testing</li>
+                    <li>Deploying microservices through pipelines as part of Release management cycle following agile methodology and PI Planning</li>
+                    <li>Worked and interated with developers for resolving pipeline build issues and application code deployment problems as part CI/CD implementation</li>
+                </ul>    
+            </div>
+
+
+
+            <div id="timeline-divider">
+                <div class="timeline-traveller">
+                    <div>
+                        <i class="fas fa-plane"></i>
+                    </div>
+                </div>
+                <div class="timeline-traveller-list">
+                    <ul>
+                        <li id="list-item-1"></li>
+                        <li id="list-item-2"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="achieve-section">
+        <div class="section-heading mb50px text-center">
+            <h1>
+                <span>
+                    <i class="fa-solid fa-medal"></i>
+                     ACHIEVEMENTS
+                 </span>
+            </h1>
+        </div>
+        <div class="achieve-section-img  text-center">            
+            <div class="mb50px">
+                <img id="az-104-cert" src="images/AZ-104-certificate.png"><br>
+                <a href="https://www.credly.com/badges/decd4d38-3188-4a2f-bbaa-d25e4d514ac3/linked_in?t=rcchjs" target="_blank">AZ-104 Cerificate</a>
+            </div>
+            <div class="mb50px">
+                <img src="images/strapi_appreciate.png">
+            </div>
+            <div class="mb25px">
+                <img src="images/start_performer.png">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="portfolio-section">
+        
+    </section>
+
+
+    <section id="contact-section">
+        <div class="section-heading mb85px text-center">
+            <h1>
+                <span>
+                    <i class="far fa-address-card"></i>
+                     CONTACT
+                 </span>
+            </h1>
+        </div>
+        <div id="contact-container">
+            <div id="contact-form-container">
+                <form id="contact-form" class="text-center" name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="input-name" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="input-email" placeholder="Your Email" required>
+                    <textarea name="Message" name="input-message" rows="2" cols="40" placeholder="Message" required></textarea>
+                    <button class="sub-btn" type="submit"> SEND MESSAGE</button>
+                </form>        
+            </div>
+            <div id="my-details-container">
+                <h3> Get In touch </h3>
+                <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Uttarakhand, India</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>(+91) 9119022939</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>vaibhavdhaulakhandi@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjmYm8gzzkak49NYwBzpChcSn9_-ai2Tj6GM3qVXX7gNrqQ_QsFytfZQENLiBHeL6S/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
