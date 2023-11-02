@@ -21,6 +21,11 @@
 }
 
 @font-face {
+	font-family: 'Montserrat-ExtraBold';
+	src: url(fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
 	font-family: 'Dancing-Script-Regular';
 	src: url("fonts/Dancing_Script/static/DancingScript-Bold.ttf");
 }
@@ -155,8 +160,92 @@ body {
 	border-bottom: 3px solid #eb0537;
 }
 
+/****---- Hamburger Icon ----****/
+
+.hamburger {
+	position: fixed;
+	width: 100vw;
+	text-align: right;
+	display: none;
+}
+
+.hamburger h1 {
+	font-size: 2em;
+	font-family: "Dancing-Script-Regular";
+}
+
+#hamburger-menu {
+	font-size: 2.5em;
+	text-align: right;
+	padding: 2vh 2vh 0 0;
+}
+
+#hamburger-menu a i {
+	color: white;
+}
+
+#hamburger-menu-list {
+	position: relative;
+	width: 0vw;
+	left: 100vw;
+	top: -10vh;
+	height: 101vh;
+	transition: all 1s ease-in-out;
+	font-family: 'Montserrat-ExtraBold';
+	background-color: #E90064;
+}
+
+#hamburger-menu-list {
+	position: relative;
+	width: 0vw;
+	left: 100vw;
+	top: -10vh;
+	height: 101vh;
+	transition: all 1s ease-in-out;
+	font-family: 'Montserrat-ExtraBold';
+	background-color: #E90064;
+}
+
+#hamburger-menu-list:target {
+ 	width: 80vw;
+	left: 20vw;
+ }
+
+#hamburger-menu-list ul {
+	list-style: none;
+	font-size: 1.5em;
+	padding-top: 1em;
+}
+
+#close {
+	padding: 3vh 6vw 0 0;
+	font-size: 2em;
+	text-align: right;
+}
+
+#close a {
+	text-decoration: none;
+	color: black;
+}
+
+#close a:hover {
+	text-decoration: none;
+	color: white;
+}
 
 
+#hamburger-menu-list ul li {
+	line-height: 60px;
+}
+
+#hamburger-menu-list ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#hamburger-menu-list ul li a:hover{
+	color: #00FA9A;
+}
 /*------------------ Name ----------------*/
 
 #my-name-container {
@@ -598,6 +687,8 @@ section {
 }
 
 
+
+/*----------- CONTACT SECTION -----------*/
 #contact-section {
 	background-color: #0abcf9;
 	background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
@@ -606,6 +697,7 @@ section {
 #contact-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #contact-form-container {
@@ -661,7 +753,7 @@ input:-webkit-autofill:active{
 
 
 #my-details-container {
-    width: 35%;
+
 }
 
 #my-details-container h3 {
@@ -696,4 +788,19 @@ input:-webkit-autofill:active{
 
 #contact-section #footnote i {
 	color: pink;
+}
+
+
+/*  MEDIA QUERIES */
+
+@media only screen and (max-width: 572px) {
+
+    .hamburger {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
 }

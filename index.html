@@ -15,6 +15,26 @@
 <body>
     <header id="body-header">
         <nav>
+            <div class="hamburger">
+                <div id="hamburger-menu">
+                    <a href="#hamburger-menu-list"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <div id="hamburger-menu-list">
+                    <div id="close">
+                        <a href="#"><i class="fa-solid fa-circle-xmark"></i></a>
+                    </div>
+                    <h1 class="text-center"><i class="fa-solid fa-house"></i></h1>                    
+                    <ul class="text-center">
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#about-section"> About </a></li>
+                        <li><a href="#skill-section"> Skills </a></li>
+                        <li><a href="#exp-section">Experience</a></li>
+                        <li><a href="#achieve-section">Achievement</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
             <ul class="horizontal-list text-center nav-menu">
                 <li><a href="#"> Home </a></li>
                 <li><a href="#about-section"> About </a></li>
@@ -236,10 +256,10 @@
         <div id="contact-container">
             <div id="contact-form-container">
                 <form id="contact-form" class="text-center" name="submit-to-google-sheet">
-                    <input type="text" name="Name" id="input-name" placeholder="Your Name" required>
+                    <input type="text" name="Name" id="input-name" placeholder="Your Name" required  onclick="this.value=''">
                     <input type="email" name="Email" id="input-email" placeholder="Your Email" required>
                     <textarea name="Message" name="input-message" rows="2" cols="40" placeholder="Message" required></textarea>
-                    <button class="sub-btn" type="submit"> SEND MESSAGE</button>
+                    <button class="sub-btn" type="submit" onclick = "clearAllInputs()"> SEND MESSAGE</button>
                 </form>        
             </div>
             <div id="my-details-container">
@@ -272,6 +292,15 @@
         })
     </script>
 
+   <script>
+      let output = document.getElementById('output');
+      const formToReset = document.getElementById('contact-form');
+      formToReset.addEventListener('submit', (e) => {
+         e.preventDefault();
+         formToReset.reset();
+         output.innerHTML += "The form is resetted successfully!"
+      });
+   </script>
 </body>
 
 </html>
