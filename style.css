@@ -121,7 +121,6 @@ body {
 }
 
 .horizontal-list li {
-	border: 2px solid black;
 	display: inline-block;
     margin: 0px;
 }
@@ -161,62 +160,74 @@ body {
 
 /****---- Hamburger Icon ----****/
 
-.hamburger {
+/*.hamburger {
 	position: fixed;
-	width: 104vw;
 	text-align: right;
-	display: none;
-	width: 80vw;
-	left: 20vw;
+	width: 0vw;
+	left: 100vw;
+	border:  2px solid red;
 }
 
 .hamburger h1 {
 	font-size: 2em;
 	font-family: "Dancing-Script-Regular";
-}
+}*/
 
 #hamburger-menu {
+	position: fixed;
+	left: 90%;
 	font-size: 2.5em;
-	text-align: right;
-	padding: 2vh 2vh 0 0;
+	padding: 2vh 0 0 0;
+	color: white;
+	display: none;
 }
+
 
 #hamburger-menu a i {
 	color: white;
 }
 
-#hamburger-menu-list {
-	position: relative;
-	width: 0vw;
-	left: 100vw;
-	top: -10vh;
-	height: 104vh;
-	transition: all 1s ease-in-out;
-	font-family: 'Montserrat-ExtraBold';
-	background-color: #E90064;
-}
 
 #hamburger-menu-list {
-	position: relative;
-	width: 0vw;
-	left: 100vw;
-	top: -10vh;
-	height: 101vh;
-	transition: all 1s ease-in-out;
-	font-family: 'Montserrat-ExtraBold';
+	position: fixed;
 	background-color: #E90064;
+	width: 0vw;
+	height: 100vh;
+	left: 100vw;
+	transition: all 1s ease-in-out;
+	font-family: 'Montserrat-ExtraBold'; 
+	
 }
 
 #hamburger-menu-list:target {
- 	width: 70vw;
-	left: 10vw;
+    width: 70vw;
+    left: 30vw;
  }
 
+/*#hamburger-menu-list:target {
+ 	width: 70vw;
+    width: 60vw;
+    right: -40vw;
+ }
+*/
 #hamburger-menu-list ul {
 	list-style: none;
 	font-size: 1.5em;
 	padding-top: 1em;
 }
+
+#hamburger-menu-list ul li {
+	line-height: 60px;
+}
+
+#hamburger-menu-list ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#hamburger-menu-list ul li a:hover{
+	color: #00FA9A;
+}  
 
 #close {
 	padding: 3vh 6vw 0 0;
@@ -234,19 +245,9 @@ body {
 	color: white;
 }
 
+/*
 
-#hamburger-menu-list ul li {
-	line-height: 60px;
-}
 
-#hamburger-menu-list ul li a{
-	text-decoration: none;
-	color: white;
-}
-
-#hamburger-menu-list ul li a:hover{
-	color: #00FA9A;
-}
 /*------------------ Name ----------------*/
 
 #my-name-container {
@@ -305,7 +306,6 @@ section {
 	height: auto;
 	border-radius: 50%;
 	margin-top: 80px;
-    box-shadow: 0px -4px 12px -4px #fd3a64,4px 0px 12px -4px  #39a9ee,0px 4px 12px -4px #32e586;
     border-top: 4px solid  #fd3a64;
 	border-right: 4px solid  #39a9ee;
 	border-bottom: 4px solid #32e586 ;
@@ -321,13 +321,14 @@ section {
 
 #about-section div p{
 	color: black;
-	font-family: 'Montserrat-Regular';
+	font-family: 'Montserrat-Regular'; 
 	font-size: 1.2rem;
 	word-spacing: 8px;
 	line-height: 30px;
  }
 
 #about-section div p::first-letter{
+	color: white;
 	font-size: 1.8rem;
 	font-weight: 900;
 }
@@ -798,10 +799,9 @@ input:-webkit-autofill:active{
 
 @media only screen and (max-width: 572px) {
 
-    .hamburger {
+    #hamburger-menu{
         display: block;
     }
-    
     
     .nav-menu {
         display: none;
@@ -811,9 +811,16 @@ input:-webkit-autofill:active{
 		width: 10em;
 		margin: 40px 0px;	
 	}
+    
+    #about-section {
+    	background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
 
 	#about-section div {
-	  box-shadow: 0px 0px 10px 6px;
 	  margin: 10px;
 	  padding: 25px;
 	}
@@ -823,31 +830,33 @@ input:-webkit-autofill:active{
 	word-spacing: 4px;
 	line-height: 26px;
 	text-align: justify;
-/*	font-family: "Work Sans";*/
+    font-family: 'Montserrat-Light';
+    color: white;
  }
 }
 
 
 
 
-/*#about-section {
+/*
+#about-section {
 	position: relative;
+	background: #FF416C;  
+	background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  
+	background: linear-gradient(to left, #FF4B2B, #FF416C); 
 
-    background-color: #427D9D;
 	z-index: 6;
-}*/
+}
 
-/*#about-section img {
+#about-section img {
 	width: 15em;
 	height: auto;
 	border-radius: 50%;
 	margin-top: 80px;
-    box-shadow: 0px -4px 12px -4px #fd3a64,4px 0px 12px -4px  #39a9ee,0px 4px 12px -4px #32e586;
     border-top: 4px solid  #fd3a64;
 	border-right: 4px solid  #39a9ee;
 	border-bottom: 4px solid #32e586 ;
 	padding: 10px 10px 10px 0px;
-	transition: all 2s linear;
 }
 
 #about-section div {
@@ -858,14 +867,15 @@ input:-webkit-autofill:active{
 
 
 #about-section div p{
-	color: white;
-	font-family: 'Lato-Light';
+	color: black;
+	font-family: 'Montserrat-Regular'; 
 	font-size: 1.2rem;
 	word-spacing: 8px;
 	line-height: 30px;
  }
 
 #about-section div p::first-letter{
+	color: white;
 	font-size: 1.8rem;
 	font-weight: 900;
 }*/
