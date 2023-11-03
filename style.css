@@ -385,42 +385,12 @@ section {
  }
 
 
-#docker-img {
-    height: 5em;
-/*	border: 2px solid red;*/
-}
-
-#k8s-img {
-	height: 4em;
-	padding: 8px;
-/*	border: 2px solid red;*/
-}
-
 #helm-img {
-	height: 4em;
 	width: 4em;
-	padding: 8px;
-/*	border: 2px solid red;*/
 }
 
-#azure-img {
-	height: 4em;
-	padding: 8px;
-/*	border: 2px solid red;*/
-}
 
-#html-img {
-	height: 4em;
-	padding: 8px;
-/*	border: 2px solid red;*/
-}
-
-#css-img {
-	height: 4em;
-	padding: 8px;
-}
-
-#terraform-img {
+.skill-image {
 	height: 4em;
 	padding: 8px;
 }
@@ -797,7 +767,7 @@ input:-webkit-autofill:active{
 /*  MEDIA QUERIES */
 
 @media only screen and (max-width: 572px) {
-	/*	Hamburger*/
+	/****	Hamburger ****/
 
     #hamburger-menu{
         display: block;
@@ -832,73 +802,45 @@ input:-webkit-autofill:active{
 	    font-family: 'Montserrat-Regular'; 
  	}
 
- 	 .section-heading span {
-    font-size: 30px;
- }
+
+    /**** Section	****/
+ 	.section-heading span {
+ 		font-size: 30px;
+    }
 
  	#skill-section {
- 		font-size: 0.6em;
+ 		font-size: 0.7em;
  	}
+	
 	.skill {
   		margin: 10px;
-  		padding:10px;
+  		padding:15px;
   		border-bottom: 2px solid white;;
 	}
 
 	.skill-progress {
- 	border: 2px solid white;
- 	height: 1.6em;
- 	width: 90px;
- 	border-radius: 15px;
- 	box-shadow: 0px 0px 10px 4px;
- }
+ 		border: 2px solid white;
+ 		height: 2em;
+ 		width: 95px;
+ 		border-radius: 15px;
+ 		box-shadow: 0px 0px 10px 4px;
+	}
 
- .skill-name {
-   padding: 1px 10px;
-   font-family: 'Lato';
-   text-align: center;
-   color: white;
+ 	.skill-name {
+   		padding: 3px 10px;
+   		font-family: 'Lato';
+   		text-align: center;
+   		color: white;
+   	}
 
+	#helm-img {
+		width: 6em;
+	}
 
-}
-#docker-img {
-    height: 3.5em;
-}
-
-#k8s-img {
-	height: 3em;
-	padding: 2px;
-
-}
-
-#helm-img {
-	height: 3em;
-	width: 3em;
-	padding: 2px;
-
-}
-
-#azure-img {
-	height: 3em;
-	padding: 2px;
-
-}
-
-#html-img {
-	height: 3em;
-	padding: 2px;
-
-}
-
-#css-img {
-	height: 3em;
-	padding: 2px;
-}
-
-#terraform-img {
-	height: 3em;
-	padding: 2px;
-}
+	.skill-image {
+		height: 6em;
+		padding: 2px;
+	}
 
 }
 
