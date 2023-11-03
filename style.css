@@ -475,18 +475,7 @@ section {
 	position: relative;
     z-index: 4;
     background-color: #414b6c;
-    /*background-image: url(images/world-map.png);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-position: center;*/
 }
-
-/*#exp-section-bg-img img{
-   width: 100vw;
-   height: 100vh;
-   filter: invert(100%);  
-   opacity: 1;
-}*/
 
 .timeline {
 	position: relative;
@@ -514,26 +503,6 @@ section {
 .timeline-box:nth-child(2n) {
 	left: 53%;
 }
-
-/*.timeline-box::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: lightgrey;
-    top: 25%;
-    border-radius: 50%;
-    z-index: 1;
-}*/
-
-/*.timeline-box:nth-child(2n+1)::after {
-    right: -9.1%;
-}
-
-.timeline-box:nth-child(2n)::after {
-    left: -8.0%;
-}*/
-
 
 #timeline-divider {
     position: absolute;
@@ -613,10 +582,6 @@ section {
     word-spacing: 6px;
     margin-bottom: 5px;
 }
-
-
-
-
 
 
 
@@ -817,6 +782,7 @@ input:-webkit-autofill:active{
  		font-size: 30px;
     }
 
+    /**** Skill *******/
  	#skill-section {
  		font-size: 0.7em;
  	}
@@ -852,84 +818,67 @@ input:-webkit-autofill:active{
 		padding: 2px;
 	}
 
+
+	/**** Experience ****/
+	#exp-section {
+    	background-color: #1d5878;
+	}
+
+	#timeline-divider {
+	    left: 4%;
+	    height: 84%;
+	}
+
+    .timeline {
+		position: static;
+		width: 100vw; 
+	}
+ 
+
+	.timeline-box {
+		width: 82vw;
+		margin: 0px 0px 20px 40px;
+		position: static;
+		padding: 10px;
+		font-family: 'Montserrat-Regular';
+		color: white;
+		box-shadow: 0px 0px 4px 2px black;
+	}
+	.experience-designation {
+   		font-size: 1.2rem;
+   		color: black;
+   		font-family: 'Montserrat-ExtraBold';
+	}
+
+	.experience-company-name {
+    	color: black;
+    	font-size: 1rem;
+    	font-family: 'Montserrat-Regular';
+	}
+
+	.experience-duration {
+		color: #F99417;
+	    font-size: 0.9rem;
+	}
+
+	.experience-description {
+		padding: 0px;
+	}
+
+	.experience-description li{
+	    font-size: 0.8rem;
+	    padding: 5px;
+	    color: white;
+	    line-height: 20px;
+	    word-spacing: 5px;
+	    margin-bottom: 5px;
+	}
+
+	#list-item-1 {
+	 	top: 2em;
+	}
+
+	#list-item-2 {
+	 	top: 17em;
+	}
 }
-
-
-
-
-/*
-
-
-
-
-.skill {
-  margin: 20px;
-  padding:20px;
-  border-bottom: 2px solid white;;
-}
-
-.skills-display {
-	
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-
- }
-
-.skill-progress {
- 	border: 2px solid white;
- 	height: 2em;
- 	width: 150px;
- 	border-radius: 15px;
- 	box-shadow: 0px 0px 10px 4px;
- }
-
-
-#docker-img {
-    height: 5em;
-}
-
-#k8s-img {
-	height: 4em;
-	padding: 8px;
-
-}
-
-#helm-img {
-	height: 4em;
-	width: 4em;
-	padding: 8px;
-
-}
-
-#azure-img {
-	height: 4em;
-	padding: 8px;
-
-}
-
-#html-img {
-	height: 4em;
-	padding: 8px;
-
-}
-
-#css-img {
-	height: 4em;
-	padding: 8px;
-}
-
-#terraform-img {
-	height: 4em;
-	padding: 8px;
-}
-
-.skill-name {
-   padding: 6px 14px;
-   font-family: 'Lato';
-   text-align: center;
-   letter-spacing: 1px;
-   color: white;
-}
-
-}*/
