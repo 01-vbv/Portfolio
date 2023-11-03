@@ -363,7 +363,7 @@ section {
  }
 
 .skill {
-  margin: 20px;
+  margin: 20px 20px 50px 20px;
   padding:20px;
   border-bottom: 2px solid white;;
 }
@@ -777,6 +777,15 @@ input:-webkit-autofill:active{
         display: none;
     } 
 
+    .section-heading {
+    width: auto;
+    padding: 40px 10px 10px;
+    font-weight: 400;
+    font-family: 'Lato-Light';
+    color: white;
+ }
+
+
 	/* About   */
     #about-section img {
 		width: 10em;
@@ -813,32 +822,33 @@ input:-webkit-autofill:active{
  	}
 	
 	.skill {
-  		margin: 10px;
-  		padding:15px;
-  		border-bottom: 2px solid white;;
+  		margin: 10px 0px 25px 0px;
+  		padding:10px 5px;
+  		border-bottom: none;
 	}
+	
+	.skills-display {
+		justify-content: space-between;
+
+ 	}
 
 	.skill-progress {
  		border: 2px solid white;
  		height: 2em;
  		width: 95px;
- 		border-radius: 15px;
- 		box-shadow: 0px 0px 10px 4px;
+ 		box-shadow: 0px 0px 4px 2px;
 	}
 
  	.skill-name {
    		padding: 3px 10px;
-   		font-family: 'Lato';
-   		text-align: center;
-   		color: white;
    	}
 
 	#helm-img {
-		width: 6em;
+		width: 5em;
 	}
 
 	.skill-image {
-		height: 6em;
+		height: 4.5em;
 		padding: 2px;
 	}
 
