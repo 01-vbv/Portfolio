@@ -337,7 +337,7 @@ section {
 
 
 #skill-section {
-	background-color: rgb(56,141,128);
+	background: #11998e;
 	position: relative;
 	z-index: 5;
 }
@@ -479,16 +479,15 @@ section {
 
 .timeline {
 	position: relative;
-	width: 75%; 
+	width: 85%; 
 }
 
 
 .timeline-box {
-	width: 40%;
+	width: 45%;
 	min-height: 150px;
 	padding: 10px;
 	position: relative;
-	left:5%;
 	font-family: 'Montserrat-Light';
 	opacity: 1;
 	color: white;
@@ -501,7 +500,7 @@ section {
 }
 
 .timeline-box:nth-child(2n) {
-	left: 53%;
+	left: 54%;
 }
 
 #timeline-divider {
@@ -542,11 +541,11 @@ section {
 }
 
 #list-item-1 {
- top: 2em;
+ top: 1em;
 }
 
 #list-item-2 {
- top: 15em;
+ top: 13em;
 }
 
 .experience-designation {
@@ -587,17 +586,37 @@ section {
 
 /*------------- ACHIEVEMENTS --------------*/
 #achieve-section {
-	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	background: #0b8793;
 	position: relative;
 	z-index: 3;
 }
 
-
-.achieve-section-img{
-
+.achieve-content {
+    background: repeating-conic-gradient( #2F3C7E 0% 25%, #79A7D3 0% 50%) 0 0/30px 30px round;
+    margin: 0px 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.achieve-section-img div img{
+.achieve-content img {
+	padding: 8px;
+}
+
+#az-104-cert {
+	width: 200px;
+}
+
+#strapi-appr-img {
+	width: 750px;
+}
+
+#star-appr-img {
+	width: 750px;
+}
+
+/*.achieve-section-img div img{
   width: 80%;
   height: 60%;
 }
@@ -607,16 +626,6 @@ section {
 	height: 30%;
 }
 
-.achieve-section-img div a {
-	color:white;
-	border-bottom: 2px solid #00ff77;
-	text-decoration: none;
-}
-
-.achieve-section-img div a:hover {
-	color:#00ff77;
-	border-bottom: 2px solid white;
-}
 
 /*------------ PORTFOOLIO-----------*/
 
@@ -731,7 +740,7 @@ input:-webkit-autofill:active{
 
 /*  MEDIA QUERIES */
 
-@media only screen and (max-width: 572px) {
+@media only screen and (max-width: 768px) {
 	/****	Hamburger ****/
 
     #hamburger-menu{
@@ -825,7 +834,7 @@ input:-webkit-autofill:active{
 	}
 
 	#timeline-divider {
-	    left: 4%;
+	    left: 3%;
 	    height: 84%;
 	}
 
@@ -881,4 +890,17 @@ input:-webkit-autofill:active{
 	#list-item-2 {
 	 	top: 17em;
 	}
+
+
+	#az-104-cert {
+	width: 150px;
+}
+
+#strapi-appr-img {
+	width: 400px;
+}
+
+#star-appr-img {
+	width: 400px;
+}
 }
